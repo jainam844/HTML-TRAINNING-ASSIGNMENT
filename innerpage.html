@@ -9,9 +9,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        .my-dropdown-toggle::after {
-            content: none;
+           input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: white;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 4px solid rgba(241, 237, 237, 0.986);
+    }
+
+     input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: rgb(248, 59, 59);
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    } 
+       
+input[type=checkbox] {
+          accent-color: rgb(235, 34, 34);
         }
     </style>
 </head>
@@ -68,7 +97,7 @@
     </nav>
 
 
-    <div class="row">
+    <div class="row container-fluid ">
         <div class="col-lg-2 d-none d-lg-block d-xl-block d-xxl-block ">
             <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
                 <div class="position-sticky">
@@ -78,28 +107,28 @@
 
 
                             <a href="#" class="list-group-item list-group-item-action py-2 ripple  mb-3 border-0">
-                                <img src="images/dashboard-default.svg" style="height: 15px; width: 15px;">
+                                <img src="image/dashboard-default.svg" style="height: 15px; width: 15px;">
                                 <i class="fas fa-chart-area fa-fw me-3"></i><span>Dashboard </span>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"
                                 style="background-color: #FFF3F4;">
-                                <img src="images/graph-active.svg" style="height: 15px; width: 15px;">
+                                <img src="image/graph-active.svg" style="height: 15px; width: 15px;">
                                 <i class="fas fa-lock fa-fw me-3"></i><span style="color: #C8242F;">Analysis</span></a>
                             <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0">
-                                <img src="images/inbox-default.svg" style="height: 15px; width: 15px;">
+                                <img src="image/inbox-default.svg" style="height: 15px; width: 15px;">
                                 <i class="fas fa-chart-line fa-fw me-3"></i><span>Inbox</span></a>
                             <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0">
-                                <img src="images/clock-default.svg" style="height: 15px; width: 15px;">
+                                <img src="image/clock-default.svg" style="height: 15px; width: 15px;">
                                 <i class="fas fa-chart-pie fa-fw me-3"></i><span>History</span>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img
-                                    src="images/user-default.svg" style="height: 15px; width: 15px;">
+                                    src="image/user-default.svg" style="height: 15px; width: 15px;">
                                 <i class="fas fa-chart-bar fa-fw me-3"></i><span>Users</span></a>
                             <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img
-                                    src="images/maintenance-default.svg" style="height: 15px; width: 15px;">
+                                    src="image/maintenance-default.svg" style="height: 15px; width: 15px;">
                                 <i class="fas fa-globe fa-fw me-3"></i><span>Maintenance</span></a>
                             <a href="#" class="list-group-item list-group-item-action py-2 ripple mb-3 border-0"><img
-                                    src="images/setting-default.svg" style="height: 15px; width: 15px;">
+                                    src="image/setting-default.svg" style="height: 15px; width: 15px;">
                                 <i class="fas fa-building fa-fw me-3 "></i><span>Setting</span></a>
 
                     </div>
@@ -113,28 +142,28 @@
             <div class="row">
                 <div class="col-11 mt-0 ms-2" style="background-color: white;">
                     <div class="col-11 mt-4 ">
-                        <h4 class="ms-2">One Column</h4>
+                        <h4 class="ms-5 w-100">One Column</h4>
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-md-12 mt-3">
 
-                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Name">
+                                    <input type="text" class="form-control ms-4 w-100" id="inputEmail4" placeholder="Name">
                                 </div>
-                                <select class="selectpicker form-control show-menu-arrow mt-3 w-100"
+                                <select class="selectpicker form-control show-menu-arrow mt-2 ms-4 w-100vw"
                                     title="Choose one of the following...">
                                     <option>Dropdown </option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                    <option>Tent</option>
-                                    <option>Flashlight</option>
-                                    <option>Toilet Paper</option>
+                                    <option>option1</option>
+                                    <option>option2</option>
+                                    <option>option3</option>
+                                    <option>option4</option>
+                                    <option>option5</option>
 
                                 </select>
                             </div>
 
                             <div class="form-group  mt-3">
 
-                                <textarea class="form-control" id="w3review" name="w3review" rows="5" cols="170"
+                                <textarea class="form-control ms-4 " id="w3review" name="w3review" rows="5" cols="150"
                                     placeholder="Multiple line"></textarea>
 
                             </div>
@@ -160,11 +189,11 @@
                                                 <select class="selectpicker form-control show-menu-arrow mt-3 w-100"
                                                     title="Choose one of the following...">
                                                     <option>Dropdown </option>
-                                                    <option>Ketchup</option>
-                                                    <option>Relish</option>
-                                                    <option>Tent</option>
-                                                    <option>Flashlight</option>
-                                                    <option>Toilet Paper</option>
+                                                    <option>option1</option>
+                                                    <option>option2</option>
+                                                    <option>option3</option>
+                                                    <option>option4</option>
+                                                    <option>option5</option>
 
                                                 </select>
                                             </div>
@@ -202,21 +231,69 @@
                                                 <input type="text" class="form-control mt-3" id="inputCity"
                                                     placeholder="User Name"></div>
                                             <div class="col-lg-3 col-sm-12">
-                                                <input type="text"  class="form-control mt-3" id="inputCity"
+                                                <input type="text" class="form-control mt-3" id="inputCity"
                                                     placeholder="Name"></div>
                                         </div>
-                                        <h4 class="ms-1 mt-3">Other Design Element</h4>
-                                        <h6 class="mt-3">File Upload</h6>
-                                        <input type="file" class="form-control btn btn-outline-danger rounded-pill w-25"  >
-                                        
+                                        <h4 class="ms-1 mt-5">Other Design Element</h4>
+                                        <h5 class="mt-4 ms-1">File Upload</h5>
+                                        <input type="file" class="custom-file-input">
+                                        <!-- <input type="file" class="form-control btn btn-outline-danger rounded-pill w-25"  > -->
+                                        <h4 class="ms-1 mt-3">Radio Button</h4>
+
+          
+                                        <input type='radio' name="gender" class="ms-4"/> Option 1
+                                        <input type='radio' name="gender" class="ms-4"/> Option 2
+                                    </label>
+                                        <h4 class="ms-1 mt-3">Check Box</h4>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" class="ms-4" value=""> Option 1
+                                          </label>
+                                          <label class="checkbox-inline">
+                                            <input type="checkbox" class="ms-4" value=""> Option 2
+                                          </label>
+                                       
+                                  </div>
+
+
+                                  <h4 class="ms-1 mt-3">Snack Bar</h4>
+                                 
+                                  <div class="form-group mt-3">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-12">
+                                          
+                                            <input type="text" class="form-control mt-3" id="inputCity"
+                                                placeholder="Name"></div>
+                                          
+                                        <div class="col-lg-6 col-sm-12">
+
+                                            <input type="text" class="form-control mt-3" id="inputCity "
+                                                placeholder="User Name"></div>
+                                        <div class="w-100"></div>
+                                        <div class="col-lg-6 col-sm-12">
+
+                                            <input type="text" class="form-control mt-3" id="inputCity"
+                                                placeholder="Password"></div>
+                                        <div class="col-lg-6 col-sm-12">
+                                            <input type="text" class="form-control mt-3" id="inputCity "
+                                            placeholder="User Name"></div>
+                                    <div class="w-100"></div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        </div>
+
+
+                                    </div>
+                                 
                         </form>
+                       
                     </div>
+                  
                 </div>
+               
             </div>
         </div>
+           
 
-
-
+    
     </div>
 
 

@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-lg " style="background-color: white;">
         <div class="container-fluid">
 
-            <a href="#"><img src="./images/menu-bar.svg" class="me-2"></a>
+            <a href="#"><img src="./images/menu-bar.svg"  id="mySidebar" class="sidebar"></a>
 
 
             <img src="./images/header-logo.svg">
@@ -74,7 +74,7 @@
     </nav>
 
 
-    <div class="row">
+    <div class="row container-fluid">
         <div class="col-lg-2 d-none d-lg-block d-xl-block d-xxl-block ">
             <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white my-auto">
                 <div class="position-sticky">
@@ -126,7 +126,7 @@
                 <div class="col-lg-2 col-md-6 col-sm-12 mb-2 ">
                     <div class="card border-0">
                         <div class=" row card-body">
-                            <div class="col-3"><img src="images/new-product.svg" class="py-4 ps-3"></div>
+                            <div class="col-3"><img src="images/star.svg" class="py-4 ps-3"></div>
                             <div class="col-9 py-4">
                                 <h5 class="card-title" style="text-align: center;">23,456</h5>
                                 <p class="card-text " style="text-align: center;">New Products</p>
@@ -150,7 +150,7 @@
                 <div class="col-lg-2 col-md-6 col-sm-12 mb-2 ms-auto">
                     <div class="card border-0">
                         <div class=" row card-body">
-                            <div class="col-3"><img src="images/new-product.svg" class="py-4 ps-3"></div>
+                            <div class="col-3"><img src="images/total-product.svg" class="py-4 ps-3" style="width:90px; height:90px;"></div>
                             <div class="col-9 py-4">
                                 <h5 class="card-title" style="text-align: center;">32,456</h5>
                                 <p class="card-text " style="text-align: center;">Total Products</p>
@@ -162,7 +162,7 @@
                 <div class="col-lg-2 col-md-6 col-sm-12 mb-2 ms-auto">
                     <div class="card border-0">
                         <div class=" row card-body">
-                            <div class="col-3"><img src="images/new-product.svg" class="py-4 ps-3"></div>
+                            <div class="col-3"><img src="images/dollar-filled.svg" class="py-4 ps-3"></div>
                             <div class="col-9 py-4">
                                 <h5 class="card-title" style="text-align: center;">5678</h5>
                                 <p class="card-text " style="text-align: center;">Today’s Sale</p>
@@ -174,7 +174,7 @@
                 <div class="col-lg-2 col-md-6 col-sm-12 mb-2 mx-auto">
                     <div class="card border-0">
                         <div class=" row card-body">
-                            <div class="col-3"><img src="images/new-product.svg" class="py-4 ps-3"></div>
+                            <div class="col-3"><img src="images/money-bag.svg" class="py-4 ps-3"></div>
                             <div class="col-9 py-4">
                                 <h5 class="card-title" style="text-align: center;">33,342</h5>
                                 <p class="card-text " style="text-align: center;">Total Sale</p>
@@ -341,7 +341,17 @@
 
         </div>
     </div>
-
+    <script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
