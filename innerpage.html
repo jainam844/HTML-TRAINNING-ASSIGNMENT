@@ -20,6 +20,21 @@
             float: none; padding: inherit; 
         } */
 
+        @media screen and (max-width: 992px) {
+    .nav1{
+        display: none;
+    }
+  }
+  .nav1 {
+    /* position: sticky; */
+    /* height: 400px; */
+    padding-left: 25px;
+    background: #FFFFFF;
+    opacity: 1;
+    padding-top: 10px;
+    /* margin-top: 10px; */
+
+}
 
         .tab-styles {
             margin-left: 30px;
@@ -69,11 +84,11 @@
         <nav class="navbar navbar-expand-lg " style="background-color: white;">
             <div class="container-fluid">
 
-                <a href="#"><img src="./images/menu-bar.svg" id="mySidebar" class="sidebar"></a>
-
-
-                <img src="./images/header-logo.svg">
-
+                <button type="button" onclick="openNav()" class="menubar">
+                    <img src="./images/menu-bar.svg" alt="menu-bar">
+                  </button>
+    
+                <img src="./images/header-logo.svg" class="ms-2">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -116,7 +131,7 @@
 
 
         <div class="row container-fluid">
-            <div class="col-lg-2 d-none d-lg-block d-xl-block d-xxl-block ">
+            <div class="col-lg-2 nav-1 " id="d-sidebar">
                 <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white my-auto">
                     <div class="position-sticky">
                         <div class="list-group list-group-flush mx-3 mt-4" style="height: 1670px;">
@@ -427,7 +442,18 @@
 
 
         </div>
-
+        <script>
+         
+            function openNav(){
+                var x = document.getElementById("d-sidebar");
+                if (x.style.display=="block"){
+                    x.style.display="none";}
+                else{
+                    x.style.display = "block";
+                }
+            }
+        
+        </script>
 
 
 
